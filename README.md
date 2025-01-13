@@ -1,8 +1,10 @@
 
 # Web Scraper Project
 ```
-OVERVIEW
-This project is my first attempt at creating a Python-based web scraper to collect data from websites for analysis.
+OVERVIEW:
+This project is my first attempt at creating a Python-based web scraper to collect data from websites for analysis. 
+Its purpose is to scrape data from IMDB's "Top 1,000 movies": https://www.imdb.com/search/title/?groups=top_1000&ref_=adv_prv&ref=hackernoon.com
+The infomation that will be scraped includes: Title, year of release, movie length, IMDB's rating, Metascore's rating, amount of votes, gross earnings in U.S. 
 
 FEATURES:
 Data Extraction: Gathers specific information from web pages.
