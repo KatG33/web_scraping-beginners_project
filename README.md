@@ -22,7 +22,7 @@ pandas (for data manipulation)
 
 ## Installation:
 ```
-Clone the Repository:
+CLONE THE REPOSITORY:
 git clone https://github.com/yourusername/web-scraper-project.git
 cd web-scraper-project
 
@@ -34,6 +34,7 @@ On Windows: venv\Scripts\activate
 INSTALL DEPENDENCIES:
 pip install -r requirements.txt
 Usage
+```
 
 SET THE TARGET URL:
 Update the config.py file with the URL of the website you want to scrape.
@@ -43,7 +44,7 @@ python scraper.py
 
 VIEW THE OUTPUT:
 The data will be saved in the output directory in your chosen format.
-```
+
 
 ## Legal and Ethical Considerations
 Ensure your web scraping activities comply with the target website's terms of service. Check the site's robots.txt file for any restrictions. Unauthorized data extraction can have legal consequences.
