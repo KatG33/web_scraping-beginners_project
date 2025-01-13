@@ -2,10 +2,12 @@
 # IMDb's Top 1000 Movies Web Scraper Project
 
 ## Update on 13.01.25 at 18.43 pm:
-Unfortunately this website has been updated to disallow  scraping after 2019 when the project workshop was posted.
+```
+Unfortunately, the IBMD  website has been updated to disallow  scraping after 2019, when Angelica wrote the workshop for this project.
 You can confirm this by visiting https://www.imdb.com/robots.txt 
-Hence, I will have to stop with this project and scrape this project,
-once I have completed another example of a web scraper on my GitHub *sad sigh*
+So, I will have to stop with this project, and once I have finished another example of a web scraper on my GitHub, I will delete this one.
+*sad sigh*
+```
 
 
 
