@@ -1,5 +1,5 @@
 
-# Web Scraper Project
+# IMDb's Top 1000 Movies Web Scraper Project
 
 ## Update on 13.01.25 at 18.43 pm:
 Unfortunately this website has been updated to disallow  scraping after 2019 when the project workshop was posted.
