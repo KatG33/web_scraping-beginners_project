@@ -1,38 +1,41 @@
-```
+
 # Web Scraper Project
-## Overview
+
+OVERVIEW
 This project is my first attempt at creating a Python-based web scraper to collect data from websites for analysis.
 
-## Features
+FEATURES:
 Data Extraction: Gathers specific information from web pages.
 Data Storage: Saves the collected data in formats like CSV or JSON for easy analysis.
-# Learning Resource
+
+LEARNING RESOURCES:
 I followed Angelica Dietzel's tutorial, "How to Build a Web Scraper With Python [Step-by-Step Guide]," to develop this project.
 
-## Requirements
+REQUIREMENTS:
 Python 3.x
-Libraries:
-requests
+
+LIBRARIES:
+requests 
 beautifulsoup4
 pandas (for data manipulation)
 
-## Installation
+## Installation:
 Clone the Repository:
 git clone https://github.com/yourusername/web-scraper-project.git
 cd web-scraper-project
 
-## Create a Virtual Environment:
+CREATE VIRTUAL ENVIRONMENT
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-## Install Dependencies:
+INSTALL DEPENDENCIES:
 pip install -r requirements.txt
 Usage
 
-## Set the Target URL:
+SET THE TARGET URL:
 Update the config.py file with the URL of the website you want to scrape.
 
-## Run the Scraper:
+RUN THE SCRAPER:
 python scraper.py
 View the Output:
 
