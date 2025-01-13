@@ -1,6 +1,14 @@
 
 # Web Scraper Project
 
+## Update on 13.01.25 at 18.43 pm:
+Unfortunately this website has been updated to disallow  scraping after 2019 when the project workshop was posted.
+You can confirm this by visiting https://www.imdb.com/robots.txt 
+Hence, I will have to stop with this project and scrape this project,
+once I have completed another example of a web scraper on my GitHub *sad sigh*
+
+
+
 OVERVIEW:
 This project is my first attempt at creating a Python-based web scraper to collect data from websites for analysis. 
 Its purpose is to scrape data from IMDB's "Top 1,000 movies": https://www.imdb.com/search/title/?groups=top_1000&ref_=adv_prv&ref=hackernoon.com.
