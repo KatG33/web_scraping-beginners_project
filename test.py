@@ -39,7 +39,18 @@ for container in movie_div:
     year=nv[0].text
     years.append(year)
     time=nv[1].text
-    run_time.append(time)
+    
+    # Cleaning data for this variable turning hours and minutes into minutes only
+    hour = 0
+    minutes = 0
+    total_min=0
+    try: hour = int(time.split('h')[0])
+    except: pass
+    try: minutes = int(time.split(' ')[1].split('m')[0])
+    except: pass
+    #print(hour, minutes)
+    total_min = hour*60 + minutes
+    run_time.append(total_min)
     
     ibmd = container.find('span', class_="ipc-rating-star--rating").text if container.find('span', class_="ipc-rating-star--rating") else '-'
     ibmd = float(ibmd)
@@ -50,16 +61,30 @@ for container in movie_div:
     
     vote_strings = container.find('span', class_='ipc-rating-star--voteCount').text if container.find('span', class_='ipc-rating-star--voteCount') else '-'
     vote_num = vote_strings.replace("\xa0(","").replace(")","")
-    votes.append(vote_num)
+    # Cleaning data for this variable turning M and K of votes into K 
+    mil = 0
+    thousands = 0
+    total= 0
+    try: mil = float(vote_num.split('M')[0])
+    except: pass
+    try: thousands = int(vote_num.split('K')[0])
+    except: pass
+    total_votes = int(mil*100 + thousands)
+    votes.append(total_votes)
 
 #Initialising creating of the dataframe with pandas
 movies = pd.DataFrame({
     'movie' : titles,
     'year' : years,
-    'runtime' : run_time,
+    'minLength' : run_time,
     'imdb' : imbd_rating,
     'metascore': metascores,
-    'votes' : votes,    
+    'numVotes' : votes,    
 })
 
-print(movies)
+# We tell panda to locate the column 'year', and then extract 
+# all digits from the string
+movies['year'] = movies['year'].str.extract(r'(\d+)').astype(int)
+movies['metascore'] = pd.to_numeric(movies['metascore'], errors='coerce')
+
+movies.to_csv('movies.csv')

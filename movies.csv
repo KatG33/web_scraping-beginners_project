@@ -1,0 +1,26 @@
+,movie,year,minLength,imdb,metascore,numVotes
+0,Nosferatu,2024,132,7.6,78.0,78
+1,Wicked,2024,160,7.8,73.0,104
+2,Anora,2024,139,7.8,91.0,64
+3,Interstellar,2014,169,8.7,74.0,229
+4,Nosferatu: A Symphony of Horror,1922,94,7.8,,114
+5,Gladiator,2000,155,8.5,67.0,170
+6,Dune: Part Two,2024,166,8.5,79.0,581
+7,The Wild Robot,2024,102,8.2,85.0,115
+8,The Shawshank Redemption,1994,142,9.3,82.0,300
+9,Oppenheimer,2023,180,8.3,90.0,840
+10,Dune: Part One,2021,155,8.0,74.0,931
+11,Harry Potter and the Sorcerer's Stone,2001,152,7.7,65.0,891
+12,Once Upon a Time,2019,161,7.6,84.0,886
+13,Se7en,1995,127,8.6,65.0,190
+14,The Godfather,1972,175,9.2,100.0,210
+15,The Lord of the Rings: The Fellowship of the Ring,2001,178,8.9,92.0,210
+16,The Batman,2022,176,7.8,72.0,853
+17,Inception,2010,148,8.8,74.0,260
+18,Poor Things,2023,141,7.8,88.0,322
+19,Mad Max: Fury Road,2015,120,8.1,90.0,110
+20,Top Gun: Maverick,2022,130,8.2,78.0,752
+21,The Dark Knight,2008,152,9.0,84.0,300
+22,The Wizard of Oz,1939,102,8.1,92.0,444
+23,The Goonies,1985,114,7.7,62.0,308
+24,Pulp Fiction,1994,154,8.9,95.0,229
