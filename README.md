@@ -13,6 +13,7 @@ Data Storage: Saves the collected data in formats like CSV or JSON for easy anal
 LEARNING RESOURCES:
 I followed Angelica Dietzel's tutorial, "How to Build a Web Scraper With Python [Step-by-Step Guide]," to develop this project.
 
+
 REQUIREMENTS:
 Python 3.x
 
