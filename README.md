@@ -26,8 +26,8 @@ pandas (for data manipulation)
 
 ```python
 CLONE THE REPOSITORY:
-git clone https://github.com/yourusername/web-scraper-project.git
-cd web-scraper-project
+git clone https://github.com/katg33/web_scraping-beginners_project.git
+cd web_scraping-beginners_project
 
 CREATE VIRTUAL ENVIRONMENT:
 python -m venv venv
