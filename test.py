@@ -40,16 +40,6 @@ for container in movie_div:
     time=nv[1].text
     run_time.append(time)
     
-    """
-    # I ma not sure if it is gonna go through the same element twice,
-    # or if it will save the following element, will have to check the output
-    year=container.find('span', class_="sc-300a8231-7 eaXxft dli-title-metadata-item").text
-    runtime=container.find('span', class_="sc-300a8231-7 eaXxft dli-title-metadata-item").text
-#   age_restr=container.find('span', class_="sc-300a8231-7 eaXxft dli-title-metadata-item").text
-    years.append(year)
-    time.append(runtime)
-    """
-    
     ibmd = container.find('span', class_="ipc-rating-star--rating").text if container.find('span', class_="ipc-rating-star--rating") else '-'
     ibmd = float(ibmd)
     imbd_rating.append(ibmd)
