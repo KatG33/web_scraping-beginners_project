@@ -1,7 +1,7 @@
 """Unfortunately this website has been updated to disallow  scraping.
 You can confirm this by visiting https://www.imdb.com/robots.txt 
 Hence I will have to stop with this project and scrape this project 
-once I have completed another example of web scraper"""
+once I have completed another example of a web scraper"""
 
 import requests
 from requests import get 
