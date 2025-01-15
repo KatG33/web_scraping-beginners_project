@@ -40,8 +40,6 @@ for container in movie_div:
     time=nv[1].text
     run_time.append(time)
     
-    
-    
     """
     # I ma not sure if it is gonna go through the same element twice,
     # or if it will save the following element, will have to check the output
@@ -59,7 +57,8 @@ for container in movie_div:
     m_score = container.find('span', class_='sc-b0901df4-0 bXIOoL metacritic-score-box').text if container.find('span', class_='sc-b0901df4-0 bXIOoL metacritic-score-box') else '-'
     metascores.append(m_score)
     
-    vote_num = container.find('span', class_='ipc-rating-star--voteCount').text if container.find('span', class_='ipc-rating-star--voteCount') else '-'
+    vote_strings = container.find('span', class_='ipc-rating-star--voteCount').text if container.find('span', class_='ipc-rating-star--voteCount') else '-'
+    vote_num = vote_strings.replace("\xa0(","").replace(")","")
     votes.append(vote_num)
 
 print(titles)
