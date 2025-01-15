@@ -31,11 +31,15 @@ cd web-scraper-project
 CREATE VIRTUAL ENVIRONMENT:
 python -m venv venv
 source venv/bin/activate  
-On Windows: venv\Scripts\activate
+```
+```text
+Windows command is:
+```
+```python
+venv\Scripts\activate
 
 INSTALL DEPENDENCIES:
 pip install -r requirements.txt
-Usage
 ```
 
 SET THE TARGET URL:
