@@ -9,14 +9,14 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import numpy as np 
 
-headers = {"Accept-Language": "en-US, en;q=0.5"}
-#url = "https://www.imbd.com/search/title/?groups=top_1000&ref_=adv_prv"
+headers = {"Accept-Language": "en-US,en;q=0.5",
+           "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+}
+
 url = "https://www.imdb.com/search/title/?groups=top_1000"
 results=requests.get(url, headers=headers)
 
 soup = BeautifulSoup(results.text, "html.parser")
-
-print(soup)
 
 titles = []
 years = []
@@ -27,7 +27,7 @@ votes = []
 
 
 movie_div = soup.find_all('div', class_='sc-300a8231-0 gTnHyA')
-print(movie_div)
+#print(movie_div)
 # intiating a for loop to go through each div containing info about 
 # a movie, which has been stored in movie_div
 for container in movie_div: 
@@ -62,5 +62,10 @@ for container in movie_div:
     vote_num = container.find('span', class_='ipc-rating-star--voteCount').text if container.find('span', class_='ipc-rating-star--voteCount') else '-'
     votes.append(vote_num)
 
-
+print(titles)
+print(years)
+print(run_time)
+print(imbd_rating)
+print(metascores)
+print(votes)
     
