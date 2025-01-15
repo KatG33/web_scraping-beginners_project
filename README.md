@@ -17,8 +17,8 @@ REQUIREMENTS:
 Python 3.x
 
 LIBRARIES:
-requests 
-beautifulsoup4
+requests, 
+beautifulsoup4,
 pandas (for data manipulation)
 
 
