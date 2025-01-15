@@ -23,7 +23,7 @@ pandas (for data manipulation)
 
 ## Installation
 
-```
+```python
 CLONE THE REPOSITORY:
 git clone https://github.com/yourusername/web-scraper-project.git
 cd web-scraper-project
