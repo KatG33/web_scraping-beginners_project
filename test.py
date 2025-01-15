@@ -25,14 +25,15 @@ imbd_rating = []
 metascores = []
 votes = []
 
-
 movie_div = soup.find_all('div', class_='sc-300a8231-0 gTnHyA')
 #print(movie_div)
 # intiating a for loop to go through each div containing info about 
 # a movie, which has been stored in movie_div
 for container in movie_div: 
-    name=container.a.h3.text
-    titles.append(name)
+    name1=container.a.h3.text
+    name = name1.split(".") [1]
+    title_final = name[1:]
+    titles.append(title_final)
     
     nv = container.find_all('span', attrs={'class': 'sc-300a8231-7 eaXxft dli-title-metadata-item'})
     year=nv[0].text
@@ -51,10 +52,14 @@ for container in movie_div:
     vote_num = vote_strings.replace("\xa0(","").replace(")","")
     votes.append(vote_num)
 
-print(titles)
-print(years)
-print(run_time)
-print(imbd_rating)
-print(metascores)
-print(votes)
-    
+#Initialising creating of the dataframe with pandas
+movies = pd.DataFrame({
+    'movie' : titles,
+    'year' : years,
+    'runtime' : run_time,
+    'imdb' : imbd_rating,
+    'metascore': metascores,
+    'votes' : votes,    
+})
+
+print(movies)
