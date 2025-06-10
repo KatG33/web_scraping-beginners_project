@@ -40,6 +40,7 @@ pip install -r requirements.txt
 
 ### SET THE TARGET URL:
 Update the config.py file with the URL of the website you want to scrape.
+For this project I specifically utilised https://www.imdb.com/search/title/?groups=top_1000 due to its legal permissions actual for year 2024-2025.
 
 ### RUN THE SCRAPER:
 python scraper.py
